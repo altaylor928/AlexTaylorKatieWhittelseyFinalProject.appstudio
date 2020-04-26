@@ -20,8 +20,8 @@
   "height": "auto",
   "hidden": "",
   "id": "pgPages3",
-  "items": "Home\nLog\n>Graphs\nCalendar",
-  "left": 12,
+  "items": "Home\nLog\n>Graphs",
+  "left": "50",
   "mAll": "",
   "mBottom": "",
   "mLeft": "",
@@ -51,5 +51,5 @@
   "sizing": " pagination-sm",
   "style": "",
   "top": 417,
-  "width": 306
+  "width": 214
 }

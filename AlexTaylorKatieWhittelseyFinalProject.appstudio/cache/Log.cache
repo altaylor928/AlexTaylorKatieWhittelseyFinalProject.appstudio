@@ -4,4 +4,5 @@
 
 //2 outputs: one for the meals \n and one for calories \n
 
-// FOR API - https://fdc.nal.usda.gov/
+//API HERE!
+//USE FOR LOOP, ARRAY, ARRAY METHID, AND STRING

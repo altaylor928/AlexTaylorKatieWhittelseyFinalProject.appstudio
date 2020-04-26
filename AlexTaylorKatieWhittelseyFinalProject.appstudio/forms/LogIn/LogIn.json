@@ -25,7 +25,7 @@
         "forms",
         "LogIn",
         "Elements",
-        "lnNetID.json"
+        "inptNetID.json"
       ]
     },
     {
@@ -43,16 +43,7 @@
         "forms",
         "LogIn",
         "Elements",
-        "btnLogIn.json"
-      ]
-    },
-    {
-      "!type": "External",
-      "file": [
-        "forms",
-        "LogIn",
-        "Elements",
-        "lblReponse.json"
+        "btnLogin.json"
       ]
     },
     {
@@ -62,6 +53,15 @@
         "LogIn",
         "Elements",
         "btnHome.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "LogIn",
+        "Elements",
+        "lblLogin.json"
       ]
     }
   ],

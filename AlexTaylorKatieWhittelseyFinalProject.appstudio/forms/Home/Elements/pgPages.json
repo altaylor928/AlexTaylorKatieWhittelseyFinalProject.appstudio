@@ -20,14 +20,14 @@
   "height": "auto",
   "hidden": "",
   "id": "pgPages",
-  "items": ">Home\nLog\nGraphs\nCalendar",
-  "left": 12,
+  "items": ">Home\nLog\nGraphs",
+  "left": "50",
   "mAll": "",
   "mBottom": "",
   "mLeft": "",
   "mRight": "",
   "mTop": "",
-  "onclick": "",
+  "onclick": "pgPages.onclick()",
   "onmousedown": "",
   "onmousemove": "",
   "onmouseout": "",
@@ -51,5 +51,5 @@
   "sizing": " pagination-sm",
   "style": "",
   "top": 417,
-  "width": 306
+  "width": 216
 }

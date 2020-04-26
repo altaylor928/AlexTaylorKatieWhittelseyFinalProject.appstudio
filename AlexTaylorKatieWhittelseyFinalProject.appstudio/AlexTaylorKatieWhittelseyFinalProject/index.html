@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html lang=en>
+<head>
+<meta charset="utf-8">
+<title>AlexTaylorKatieWhittelseyFinalProject</title>
+<meta name="generator" content="NSB/AppStudio 8.0.6.0$rgkw" />
+<meta name='date' content='2020-04-25 18:21:33.888252' />
+<meta name='Description' content='AlexTaylorKatieWhittelseyFinalProject' />
+<meta name='version' content='1.0.0' />
+<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no viewport-fit=cover' />
+<meta name='theme-color' content='#000000' />
+<meta name='mobile-web-app-capable' content='yes' />
+<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+<meta name='apple-mobile-web-app-title' content='' />
+<meta name='copyright' content='copyright 2020 ABC Company' />
+<link rel='apple-touch-icon' href='nsb/images/192.png' />
+<link rel='shortcut icon' href='nsb/images/192.png' />
+<link href='manifest.json' rel='manifest' />
+<link href="toolbox/as/dist/asStyle.css" rel="stylesheet">
+<script src="nsb/library/jquery3.js"></script>
+<link href="nsb/library/jquery.modal.min.css" rel="stylesheet">
+<script src="nsb/library/jquery.modal.min.js"></script>
+<script src="nsb/library/appstudioFunctions.js"></script>
+<link href="toolbox/bs4/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="toolbox/bs4/dist/open-iconic/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+<script src="toolbox/bs4/dist/js/bootstrap.bundle.min.js"></script>
+<script src="toolbox/bs4/dist/bsFunctions.min.js"></script>
+<script src="https://jqwidgets.com/public/jqwidgets/jqxcore.js"></script>
+<link href="https://jqwidgets.com/public/jqwidgets/styles/jqx.base.css" rel="stylesheet">
+<link href="https://jqwidgets.com/public/jqwidgets/styles/jqx.classic.css" rel="stylesheet">
+<script src="https://jqwidgets.com/public/jqwidgets/jqxchart.js"></script>
+<script src="https://jqwidgets.com/public/jqwidgets/jqxdata.js"></script>
+
+<style type="text/css">
+
+#LogIn {background:inherit;}
+#heLogIn {position:absolute;}
+
+#inptNetID {position:absolute; top:69px; width:324px;}
+#inptNetPass {position:absolute; top:178px; width:324px;}
+#btnLogin {position:absolute; left:230px; top:275px;}
+#btnHome {position:absolute; left:230px; top:375px;}
+#lblLogin {position:absolute; left:0px; top:42px;}
+#Home {background:inherit;}
+#heHome {position:absolute;}
+
+#btnSubmit {position:absolute; left:242px; top:372px;}
+#pgPages {position:absolute; left:50px; top:417px; width:216px;}
+#lblHome {position:absolute; left:0px; top:42px;}
+#selGender {position:absolute; left:4px; top:63px;}
+#inptAge {position:absolute; left:4px; top:140px;}
+#inptHeight {position:absolute; left:4px; top:215px;}
+#inptWeight {position:absolute; left:4px; top:291px;}
+#Log {background:inherit;}
+#heDiary {position:absolute;}
+
+#inptMeal {position:absolute; left:0px; top:45px;}
+#inptCalories {position:absolute; left:0px; top:125px;}
+#btnAdd {position:absolute; left:224px; top:225px; width:96px;}
+#lblOutput {position:absolute; left:16px; top:264px; height:64px; width:300px;}
+#lblMeals {position:absolute; left:16px; top:328px; height:64px; width:300px;}
+#pgPages2 {position:absolute; left:50px; top:417px; width:233px;}
+#Nutrition {background:inherit;}
+#heNutrition {position:absolute;}
+
+#chartNutrition_wrapper {position:absolute; left:2px; top:64px; height:160px; width:320px;}
+#chartNutrition {position:static; left:0px; top:0px; height:100%; width:100%}
+#pgPages3 {position:absolute; left:50px; top:417px; width:214px;}
+</style>
+
+</head>
+<body style="margin:0px;-ms-touch-action:none;font-family:-apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue';">
+<noscript><h1>JavaScript must be enabled!</h1></noscript>
+<div data-role="page" id="NSBPage" data-theme="a" style="position:absolute; width:100%; height:100%; background-color:inherit; ">
+<a name='/LogIn' data-role=none></a>
+<div id="LogIn"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+LogIn.innerHTML=["",  "<div id='heLogIn' class='' data-nsb-type=Header style='cursor:default; text-align:center; text-shadow:none; top:0px; left:0px; width: 100%; font-size:16px;font-family:inherit;font-weight:bold;background-color:lightgray;  ' data-i18n='Log In'>","<div id=heLogIn_addChild>",,"</div>","Log In</div>",
+  "<div id=inptNetID class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=inptNetID_header class='bs4-control-label col-sm-2 col-form-label' for=inptNetID_contents data-i18n='NetID:'>NetID:</label>",
+    "<div class='col-sm-10'>",
+      "<span id=inptNetID_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+      "<div class='input-group ' style='width:100%;'>",
+        "<input id='inptNetID_contents' type='text' autocapitalize=on autocorrect=on autocomplete=on spellcheck=true placeholder='jsmith123' required  data-i18n='jsmith123'  style='font-family:inherit;' class='form-control ' >",
+      "</div>",
+    "</div>",
+  "</div></div>",
+  "<div id=inptNetPass class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=inptNetPass_header class='bs4-control-label col-sm-2 col-form-label' for=inptNetPass_contents data-i18n='Net Password:'>Net Password:</label>",
+    "<div class='col-sm-10'>",
+      "<span id=inptNetPass_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+      "<div class='input-group ' style='width:100%;'>",
+        "<input id='inptNetPass_contents' type='text' autocapitalize=on autocorrect=on autocomplete=on spellcheck=true placeholder='ILikeBIA375!' required  data-i18n='ILikeBIA375!'  style='font-family:inherit;' class='form-control ' >",
+      "</div>",
+    "</div>",
+  "</div></div>",
+
+    "<button id='btnLogin' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Log In'><span id='btnLogin_icon' class=''></span>Log In<span id=btnLogin_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+
+    "<button id='btnHome' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Home'><span id='btnHome_icon' class=''></span>Home<span id=btnHome_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+  "<span id='lblLogin' style='font-family:inherit;padding-left:4px;padding-right:4px;border-radius:0px;'  class=' text-primary ' data-i18n='Please enter the information below'>Please enter the information below</span>",
+  ].join('');
+</script>
+</div>
+<a name='/Home' data-role=none></a>
+<div id="Home"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+Home.innerHTML=["",  "<div id='heHome' class='' data-nsb-type=Header style='cursor:default; text-align:center; text-shadow:none; top:0px; left:0px; width: 100%; font-size:16px;font-family:inherit;font-weight:bold;background-color:lightgray;  ' data-i18n='Home Page'>","<div id=heHome_addChild>",,"</div>","Home Page</div>",
+
+    "<button id='btnSubmit' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Submit'><span id='btnSubmit_icon' class=''></span>Submit<span id=btnSubmit_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+  "<nav id='pgPages' class='' style='font-family:inherit;' onclick=''>",
+  "<ul id='pgPages_contents' class='pagination pagination-sm'>",
+   NSB.bs.pagination.make('pgPages', '', '>Home\u000ALog\u000AGraphs', ' pagination-sm'),
+  "</ul></nav>",
+  "<span id='lblHome' style='font-family:inherit;padding-left:4px;padding-right:4px;border-radius:0px;'  class=' text-primary ' data-i18n='Please enter the information below'>Please enter the information below</span>",
+  "<div id=selGender data-role='none' class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=selGender_header class='bs4-control-label col-sm-2 col-form-label' for=selGender_contents data-i18n='Gender:'>Gender:</label>",
+    "<div id=selGender_header class='col-sm-10'>",
+      "<div class='input-group' style='width:100%;'>",
+        "<span id=selGender_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+    NSB.bs.select.make('selGender', 'font-family:inherit;', '', 'Male\u000AFemale', '101\u000A102\u000A103\u000A104', '', ''),
+      "</div>",
+      "</div>",
+  "</div></div>",
+  "<div id=inptAge class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=inptAge_header class='bs4-control-label col-sm-2 col-form-label' for=inptAge_contents data-i18n='Age:'>Age:</label>",
+    "<div class='col-sm-10'>",
+      "<span id=inptAge_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+      "<div class='input-group ' style='width:100%;'>",
+        "<input id='inptAge_contents' type='text' autocapitalize=on autocorrect=on autocomplete=on spellcheck=true  data-i18n=''  style='font-family:inherit;' class='form-control ' >",
+      "</div>",
+    "</div>",
+  "</div></div>",
+  "<div id=inptHeight class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=inptHeight_header class='bs4-control-label col-sm-2 col-form-label' for=inptHeight_contents data-i18n='Height in cm:'>Height in cm:</label>",
+    "<div class='col-sm-10'>",
+      "<span id=inptHeight_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+      "<div class='input-group ' style='width:100%;'>",
+        "<input id='inptHeight_contents' type='text' autocapitalize=on autocorrect=on autocomplete=on spellcheck=true  data-i18n=''  style='font-family:inherit;' class='form-control ' >",
+      "</div>",
+    "</div>",
+  "</div></div>",
+  "<div id=inptWeight class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=inptWeight_header class='bs4-control-label col-sm-2 col-form-label' for=inptWeight_contents data-i18n='Weight in lbs:'>Weight in lbs:</label>",
+    "<div class='col-sm-10'>",
+      "<span id=inptWeight_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+      "<div class='input-group ' style='width:100%;'>",
+        "<input id='inptWeight_contents' type='text' autocapitalize=on autocorrect=on autocomplete=on spellcheck=true  data-i18n=''  style='font-family:inherit;' class='form-control ' >",
+      "</div>",
+    "</div>",
+  "</div></div>",
+  ].join('');
+</script>
+</div>
+<a name='/Log' data-role=none></a>
+<div id="Log"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+Log.innerHTML=["",  "<div id='heDiary' class='' data-nsb-type=Header style='cursor:default; text-align:center; text-shadow:none; top:0px; left:0px; width: 100%; font-size:16px;font-family:inherit;font-weight:bold;background-color:lightgray;  ' data-i18n='Log Calories'>","<div id=heDiary_addChild>",,"</div>","Log Calories</div>",
+  "<div id=inptMeal class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=inptMeal_header class='bs4-control-label col-sm-2 col-form-label' for=inptMeal_contents data-i18n='Add meal or food item:'>Add meal or food item:</label>",
+    "<div class='col-sm-10'>",
+      "<span id=inptMeal_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+      "<div class='input-group ' style='width:100%;'>",
+        "<input id='inptMeal_contents' type='text' autocapitalize=on autocorrect=on autocomplete=on spellcheck=true  data-i18n=''  style='font-family:inherit;' class='form-control ' >",
+      "</div>",
+    "</div>",
+  "</div></div>",
+  "<div id=inptCalories class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=inptCalories_header class='bs4-control-label col-sm-2 col-form-label' for=inptCalories_contents data-i18n='Enter the amount of calories:'>Enter the amount of calories:</label>",
+    "<div class='col-sm-10'>",
+      "<span id=inptCalories_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+      "<div class='input-group ' style='width:100%;'>",
+        "<input id='inptCalories_contents' type='number' autocapitalize=on autocorrect=on autocomplete=on spellcheck=true  data-i18n=''  style='font-family:inherit;' class='form-control ' >",
+      "</div>",
+    "</div>",
+  "</div></div>",
+
+    "<button id='btnAdd' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Add Meal'><span id='btnAdd_icon' class=''></span>Add Meal<span id=btnAdd_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+  "<span id='lblOutput' style='font-family:inherit;padding-left:4px;padding-right:4px;border-radius:0px;'  class=' text-primary ' data-i18n=''></span>",
+  "<span id='lblMeals' style='font-family:inherit;padding-left:4px;padding-right:4px;border-radius:0px;'  class=' text-primary ' data-i18n=''></span>",
+  "<nav id='pgPages2' class='' style='font-family:inherit;' onclick=''>",
+  "<ul id='pgPages2_contents' class='pagination pagination-sm'>",
+   NSB.bs.pagination.make('pgPages2', '', 'Home\u000A>Log\u000AGraphs\u000A', ' pagination-sm'),
+  "</ul></nav>",
+  ].join('');
+</script>
+</div>
+<a name='/Nutrition' data-role=none></a>
+<div id="Nutrition"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+Nutrition.innerHTML=["",  "<div id='heNutrition' class='' data-nsb-type=Header style='cursor:default; text-align:center; text-shadow:none; top:0px; left:0px; width: 100%; font-size:16px;font-family:inherit;font-weight:bold;background-color:lightgray;  ' data-i18n='Nutrition Page'>","<div id=heNutrition_addChild>",,"</div>","Nutrition Page</div>",
+  "<div id='chartNutrition_wrapper' style='background-color:white;' class=''><div id='chartNutrition'></div></div>",
+  "<nav id='pgPages3' class='' style='font-family:inherit;' onclick=''>",
+  "<ul id='pgPages3_contents' class='pagination pagination-sm'>",
+   NSB.bs.pagination.make('pgPages3', '', 'Home\u000ALog\u000A>Graphs', ' pagination-sm'),
+  "</ul></nav>",
+  ].join('');
+</script>
+</div>
+</div>
+<script>
+if(!navigator.cookieEnabled) NSB.MsgBox('Please turn cookies on.');
+(function(){var all=document.getElementsByTagName('*');for(var i=0;i<all.length;i++)if(all[i].id!=''&&typeof all[i].id!='undefined'&&typeof window[all[i].id]=='undefined')window[all[i].id]=all[i];})()
+var NSB = NSB || {};
+NSB.currentForm = Home;
+NSB.stopOnError = true;
+NSB.enableBrowserArrows = false;
+NSB.enableAppScroll = false;
+NSB.id = 'AlexTaylorKatieWhittelseyFinalProject';
+NSB.initLanguage();
+NSB.voltAppId = '';
+NSB.voltDashboardAccess = False;
+NSB.voltDomain = '';
+NSB.PWA = true;
+if ($.mobile != undefined) $.mobile.hashListeningEnabled = false;
+
+// ***** Code for form: LogIn *****
+window.addEventListener('load', function() {
+  LogIn.style.display = 'block';
+  NSB.addProperties(LogIn);
+  heLogIn.style.lineHeight='40px';
+  NSB.addProperties.addChild(heLogIn);
+  NSB.addProperties(heLogIn);
+
+  inptNetID.addEventListener('touchmove', function(e) {e.stopPropagation();}, false);
+  NSB.bs.addProperties(inptNetID, 'Input_bs4');
+  inptNetPass.addEventListener('touchmove', function(e) {e.stopPropagation();}, false);
+  NSB.bs.addProperties(inptNetPass, 'Input_bs4');
+  NSB.bs.addProperties(btnLogin, 'Button_bs4');
+  NSB.bs.addProperties(btnHome, 'Button_bs4');
+  NSB.bs.addProperties(lblLogin, 'Label_bs4');
+  LogIn.style.display = 'none';
+}, false);
+
+// ***** Code for form: Home *****
+window.addEventListener('load', function() {
+  Home.style.display = 'block';
+  NSB.addProperties(Home);
+  heHome.style.lineHeight='40px';
+  NSB.addProperties.addChild(heHome);
+  NSB.addProperties(heHome);
+
+  NSB.bs.addProperties(btnSubmit, 'Button_bs4');
+  NSB.bs.addProperties(pgPages, 'Pagination_bs4');
+  NSB.bs.addProperties(lblHome, 'Label_bs4');
+  NSB.bs.addProperties(selGender, 'Select_bs4');
+  inptAge.addEventListener('touchmove', function(e) {e.stopPropagation();}, false);
+  NSB.bs.addProperties(inptAge, 'Input_bs4');
+  inptHeight.addEventListener('touchmove', function(e) {e.stopPropagation();}, false);
+  NSB.bs.addProperties(inptHeight, 'Input_bs4');
+  inptWeight.addEventListener('touchmove', function(e) {e.stopPropagation();}, false);
+  NSB.bs.addProperties(inptWeight, 'Input_bs4');
+  Home.style.display = 'none';
+}, false);
+
+// ***** Code for form: Log *****
+window.addEventListener('load', function() {
+  Log.style.display = 'block';
+  NSB.addProperties(Log);
+  heDiary.style.lineHeight='40px';
+  NSB.addProperties.addChild(heDiary);
+  NSB.addProperties(heDiary);
+
+  inptMeal.addEventListener('touchmove', function(e) {e.stopPropagation();}, false);
+  NSB.bs.addProperties(inptMeal, 'Input_bs4');
+  inptCalories.addEventListener('touchmove', function(e) {e.stopPropagation();}, false);
+  NSB.bs.addProperties(inptCalories, 'Input_bs4');
+  NSB.bs.addProperties(btnAdd, 'Button_bs4');
+  NSB.bs.addProperties(lblOutput, 'Label_bs4');
+  NSB.bs.addProperties(lblMeals, 'Label_bs4');
+  NSB.bs.addProperties(pgPages2, 'Pagination_bs4');
+  Log.style.display = 'none';
+}, false);
+
+// ***** Code for form: Nutrition *****
+window.addEventListener('load', function() {
+  Nutrition.style.display = 'block';
+  NSB.addProperties(Nutrition);
+  heNutrition.style.lineHeight='40px';
+  NSB.addProperties.addChild(heNutrition);
+  NSB.addProperties(heNutrition);
+
+  NSB.jqxSettings['chartNutrition']={
+    title:'',
+    backgroundColor:'white',
+    description:'',
+    padding:{ left: 5, top: 5, right: 5, bottom: 5 },
+    titlePadding:{ left: 2, top: 2, right: 2, bottom: 2 },
+    colorScheme:'scheme01',
+    showLegend:false,
+    enabled:true,
+    showToolTips:true,
+    toolTipDelay:'500'
+  }
+  chartNutrition.style.position='static';
+  NSB.addProperties(chartNutrition,chartNutrition_wrapper);
+  NSB.bs.addProperties(pgPages3, 'Pagination_bs4');
+  Nutrition.style.display = 'none';
+}, false);
+
+
+window.addEventListener('orientationchange', function(){window.scrollTo(0,0)});
+window.addEventListener('load', function() {
+  if (typeof($().i18n) === 'function') $('[data-i18n]').i18n();
+  browserWarningMessage('Please use Google Chrome, Apple Safari or another supported browser.');
+  Home.style.display = 'block';
+  Main();
+  if (typeof(Home.onshow)=='function') Home.onshow();
+}, false);
+</script>
+<script src="code.js"></script>
+
+</body>
+</html>

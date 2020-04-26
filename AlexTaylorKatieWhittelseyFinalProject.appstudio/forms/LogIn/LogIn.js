@@ -1,18 +1,15 @@
 //DONE
 
-let req = []
+let req1 = []
 
-btnLogIn.onclick=function(){
-  req = Ajax("http://radlab.creighton.edu/appStudio/authLDAP.php", "POST", "j_username=" + inptNetID.value + "&j_password=" + inptNetPass.value)
-if (req.status == 200) { //everthing worked
-     lblResponse.hidden = false
-     lblResponse.value = (`Your LDAP return code was ` + req.responseText) //1 good, 0 bad
-     NSB.MsgBox(lblResponse.value)
+btnLogin.onclick=function(){
+  req1 = Ajax("http://radlab.creighton.edu/appStudio/authLDAP.php", "POST", "j_username=" + inptNetID.value + "&j_password=" + inptNetPass.value)
+if (req1.status == 200) {
+     message = (`You successfully logged in, please click the home button`)
+     NSB.MsgBox(message)
 } else {
-     // had problem with AJAX request
-     lblResponse.hidden = false
-     lblResponse.value = ("There was an error")
-     NSB.MsgBox(lblResponse.value)
+     error = (`There was an error, please try again.`)
+     NSB.MsgBox(error)
      }
 }
 
